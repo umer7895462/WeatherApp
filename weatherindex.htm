@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
+    <title>WEATHER APP</title>
+</head>
+<body>
+    <div class="mdiv">
+        <div class="weather_app">
+            <h2 align="center">WEATHER FORECAST</h2>
+            <div class="ip">
+                <input type="text" id="userText">
+                <button onclick="getWeatherData()"><img src="https://www.freepnglogos.com/uploads/search-png/search-icon-clip-art-clkerm-vector-clip-art-online-2.png" height="20px" alt=""></button>
+            </div>
+            <div class="info" align="center">
+                <img src="sunny.png" alt="weather" class="weather_img">
+                <h1 id="temp">27°C</h1>
+                <h2 id="city">PUNE</h2>
+            </div>
+            <div class="info2">
+                <div class="humidity">
+                    <img src="https://cdn-icons-png.flaticon.com/512/727/727790.png" alt="humidity" class="humi">
+                    <h3>HUMIDITIY</h3>
+                    <h4 id="humidity-info">50%</h4>
+                </div>
+                <div class="wind">
+                    <img src="https://www.pngall.com/wp-content/uploads/5/Wind-PNG-HD-Image.png" alt="humidity" class="humi">
+                    <h3>WIND</h3>
+                    <h4 id="wind-info">4 km/h</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
