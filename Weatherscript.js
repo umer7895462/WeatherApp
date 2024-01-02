@@ -18,7 +18,7 @@ async function getWeatherData(){
 
             city = userCity.value;
             console.log(city);
-            let response = await fetch(https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey});
+            let response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`);
             let data = await response.json();
             console.log(data);
             console.log(data.weather[0].main);
